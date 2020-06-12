@@ -134,4 +134,17 @@ It has 5 required keys:
 - **inDepth:** *string*\
     Detailed description of the node that will be displayed on the website.
 
+## Manually adding nodes to the Library
+
+> Note: This manual addition of nodes to the library is a temporary process until further remodelling of the project that will introduce automation of the process, but is currently still under development.
+
+To manually add and document new nodes into the library, following steps are required:
+
+- Add the JSON object in Dynamo_Nodes_Documentation.json or Dynamo_Nodes_Revit.json depending upon the scope of the node to be added. (Refer [JSON Schema](https://github.com/DynamoDS/DynamoDictionary_React/blob/master/public/data/README.md#json-schema-documentation-for-nodes))
+- Add the XML tags in the root node or append to the desired nested level if adding to an existing category. (Refer [XML Schema](https://github.com/DynamoDS/DynamoDictionary_React/blob/master/public/data/README.md#xml-schema-documentation-for-library))
+- Create folders in the *public/data/EXAMPLES* directory with the same name as the parent category and sub-categories, appropriately nested,\
+    create group folders (Create, Query or Action),\
+    create *dyn* and *img* folders and place .dyn files and images related to the node in them.(Refer [Folder Structure](https://github.com/DynamoDS/DynamoDictionary_React/blob/master/public/data/README.md#folder-structure))
+
+It is important for the node to appear in the library correctly data that you update both the JSON and XML files along with creating the required folders.
 
